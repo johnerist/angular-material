@@ -11,6 +11,8 @@ import { BottomSheetPopupComponent } from './components/bottom-sheet/components/
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { ChipsComponent } from './components/chips/chips.component';
+import { DatepickerComponent } from './components/datepicker/datepicker.component';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -22,6 +24,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -32,7 +38,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     BottomSheetPopupComponent,
     ButtonComponent,
     CardComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    ChipsComponent,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,
@@ -48,8 +56,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatListModule,
     MatButtonModule,
     MatCardModule,
-    MatCheckboxModule
-
+    MatCheckboxModule,
+    MatChipsModule,
+    MatLegacyChipsModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
