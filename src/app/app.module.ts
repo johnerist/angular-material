@@ -13,6 +13,8 @@ import { CardComponent } from './components/card/card.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { ChipsComponent } from './components/chips/chips.component';
 import { DatepickerComponent } from './components/datepicker/datepicker.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { DialogContentComponent } from './components/dialog/components/dialog-content/dialog-content.component';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -28,6 +30,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     CardComponent,
     CheckboxComponent,
     ChipsComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    DialogComponent,
+    DialogContentComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +65,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatChipsModule,
     MatLegacyChipsModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
