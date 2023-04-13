@@ -15,6 +15,7 @@ import { ChipsComponent } from './components/chips/chips.component';
 import { DatepickerComponent } from './components/datepicker/datepicker.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { DialogContentComponent } from './components/dialog/components/dialog-content/dialog-content.component';
+import { DividerComponent } from './components/divider/divider.component';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -31,6 +32,7 @@ import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     ChipsComponent,
     DatepickerComponent,
     DialogComponent,
-    DialogContentComponent
+    DialogContentComponent,
+    DividerComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +69,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatLegacyChipsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
