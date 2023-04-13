@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { BadgeComponent } from './components/badge/badge.component';
 import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
 import { BottomSheetPopupComponent } from './components/bottom-sheet/components/bottom-sheet-popup/bottom-sheet-popup.component';
+import { ButtonComponent } from './components/button/button.component';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -16,6 +17,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { MatListModule } from '@angular/material/list';
     AutocompleteComponent,
     BadgeComponent,
     BottomSheetComponent,
-    BottomSheetPopupComponent
+    BottomSheetPopupComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { MatListModule } from '@angular/material/list';
     MatBadgeModule,
     MatIconModule,
     MatBottomSheetModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
