@@ -9,6 +9,7 @@ import { BadgeComponent } from './components/badge/badge.component';
 import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
 import { BottomSheetPopupComponent } from './components/bottom-sheet/components/bottom-sheet-popup/bottom-sheet-popup.component';
 import { ButtonComponent } from './components/button/button.component';
+import { CardComponent } from './components/card/card.component';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -18,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { MatButtonModule } from '@angular/material/button';
     BadgeComponent,
     BottomSheetComponent,
     BottomSheetPopupComponent,
-    ButtonComponent
+    ButtonComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatIconModule,
     MatBottomSheetModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
