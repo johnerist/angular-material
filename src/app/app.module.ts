@@ -35,6 +35,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { FormFieldComponent } from './components/form-field/form-field.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     DialogComponent,
     DialogContentComponent,
     DividerComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    FormFieldComponent
   ],
   imports: [
     BrowserModule,
