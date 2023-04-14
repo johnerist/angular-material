@@ -38,7 +38,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import{ MatGridListModule } from '@angular/material/grid-list';
-import { IconComponent } from './components/icon/icon.component'
+import { MatMenuModule} from '@angular/material/menu';
+import { IconComponent } from './components/icon/icon.component';
+import { InputComponent } from './components/input/input.component';
+import { MenuComponent } from './components/menu/menu.component'
 
 @NgModule({
   declarations: [
@@ -58,7 +61,9 @@ import { IconComponent } from './components/icon/icon.component'
     ExpansionPanelComponent,
     FormFieldComponent,
     GridListComponent,
-    IconComponent
+    IconComponent,
+    InputComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -82,7 +87,8 @@ import { IconComponent } from './components/icon/icon.component'
     MatDialogModule,
     MatDividerModule,
     MatExpansionModule,
-    MatGridListModule
+    MatGridListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

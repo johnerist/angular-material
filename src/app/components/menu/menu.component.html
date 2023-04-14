@@ -1,0 +1,20 @@
+<div style="text-align: center; margin-top: 50px;">
+    <button mat-button [matMenuTriggerFor]="dropdownMenu">Menu</button>
+    <mat-menu #dropdownMenu="matMenu">
+        <button mat-menu-item>Apples</button>
+        <button mat-menu-item>Banana</button>
+    </mat-menu>
+</div>
+
+<div style="text-align: center; margin-top: 50px;">
+    <button mat-button [matMenuTriggerFor]="carsMenu">Cars</button>
+    <mat-menu #carsMenu="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="PeroduaMenu">Perodua</button>
+        <button mat-menu-item>Proton</button>
+    </mat-menu>
+
+    <mat-menu #PeroduaMenu="matMenu">
+        <button mat-menu-item>Myvi</button>
+        <button mat-menu-item>Viva</button>
+    </mat-menu>
+</div>
