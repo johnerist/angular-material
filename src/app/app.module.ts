@@ -17,6 +17,8 @@ import { DialogComponent } from './components/dialog/dialog.component';
 import { DialogContentComponent } from './components/dialog/components/dialog-content/dialog-content.component';
 import { DividerComponent } from './components/divider/divider.component';
 import { ExpansionPanelComponent } from './components/expansion-panel/expansion-panel.component';
+import { FormFieldComponent } from './components/form-field/form-field.component';
+import { GridListComponent } from './components/grid-list/grid-list.component';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -35,7 +37,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { FormFieldComponent } from './components/form-field/form-field.component';
+import{ MatGridListModule } from '@angular/material/grid-list'
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import { FormFieldComponent } from './components/form-field/form-field.component
     DialogContentComponent,
     DividerComponent,
     ExpansionPanelComponent,
-    FormFieldComponent
+    FormFieldComponent,
+    GridListComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +79,8 @@ import { FormFieldComponent } from './components/form-field/form-field.component
     MatNativeDateModule,
     MatDialogModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
