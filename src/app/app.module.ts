@@ -37,7 +37,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
-import{ MatGridListModule } from '@angular/material/grid-list'
+import{ MatGridListModule } from '@angular/material/grid-list';
+import { IconComponent } from './components/icon/icon.component'
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import{ MatGridListModule } from '@angular/material/grid-list'
     DividerComponent,
     ExpansionPanelComponent,
     FormFieldComponent,
-    GridListComponent
+    GridListComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
