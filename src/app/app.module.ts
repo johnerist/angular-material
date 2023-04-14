@@ -39,9 +39,11 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import{ MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule} from '@angular/material/menu';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { IconComponent } from './components/icon/icon.component';
 import { InputComponent } from './components/input/input.component';
-import { MenuComponent } from './components/menu/menu.component'
+import { MenuComponent } from './components/menu/menu.component';
+import { PaginatorComponent } from './components/paginator/paginator.component'
 
 @NgModule({
   declarations: [
@@ -63,7 +65,8 @@ import { MenuComponent } from './components/menu/menu.component'
     GridListComponent,
     IconComponent,
     InputComponent,
-    MenuComponent
+    MenuComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,
@@ -88,7 +91,8 @@ import { MenuComponent } from './components/menu/menu.component'
     MatDividerModule,
     MatExpansionModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
