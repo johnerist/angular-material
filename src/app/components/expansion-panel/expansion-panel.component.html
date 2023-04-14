@@ -1,0 +1,28 @@
+<div style="width: 700px; margin: 50px auto;">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Panel One</mat-panel-title>
+                <mat-panel-description>Panel One Description</mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Lorem Ipsum is a text.</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>Panel Two</mat-panel-title>
+                <mat-panel-description>Panel Two Description</mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Lorem Ipsum is a text.</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel (opened)="panelState= true" (closed)="panelState=false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>Panel Three</mat-panel-title>
+                <mat-panel-description>Panel Three Description</mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Lorem Ipsum is a text.</p>
+        </mat-expansion-panel>
+        
+    </mat-accordion>
+</div>
